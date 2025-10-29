@@ -1,0 +1,91 @@
+/* Ana Sayfa Stili ile Uyumlu Renk Paleti ve Fontlar */
+:root {
+    --dark-custom: #212529; /* Ana Başlıklar ve Metinler */
+    --secondary-custom: #555; /* Açıklama Metni */
+    --primary-color: #007bff; /* Vurgu Rengi (Mavi) */
+    --bg-light: #f8f9fa; /* Sayfa Arka Planı */
+}
+
+/* Sayfa Genel Yapısı */
+.tamed-about-page {
+    background-color: var(--bg-light);
+    /* Ana sayfanızda kullandığınız fontu burada kullanın */
+    font-family: 'Poppins', sans-serif; 
+}
+
+/* Başlık Stilleri (Ana sayfadaki gibi net ve büyük) */
+.tamed-title-main {
+    font-size: 3.5rem; 
+    font-weight: 700;
+    margin-bottom: 1rem;
+    /* Ana sayfanızdaki gibi çarpıcı bir font kullanın, örn: */
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.tamed-subtitle-h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.tamed-subtitle-h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Metin Stilleri */
+.tamed-text-lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--secondary-custom);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tamed-text-p, .tamed-text-card {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--secondary-custom);
+}
+
+/* Renk Sınıfları */
+.text-dark-custom {
+    color: var(--dark-custom) !important;
+}
+.text-primary-custom {
+    color: var(--primary-color) !important;
+}
+
+/* Görsel ve Kart Stilleri */
+.img-fluid {
+    height: 100%;
+    object-fit: cover;
+}
+
+.rounded-lg {
+    border-radius: 0.75rem !important;
+}
+
+.info-card {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Responsive Ayarlar */
+@media (max-width: 767.98px) {
+    .tamed-title-main {
+        font-size: 2.5rem;
+    }
+    .tamed-subtitle-h2 {
+        font-size: 1.5rem;
+    }
+    .tamed-text-lead {
+        font-size: 1rem;
+    }
+}
